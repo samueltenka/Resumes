@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+
+\usepackage{amsmath}
+\usepackage[top=1.4in, bottom=1.4in, left=1.4in, right=1.4in]{geometry}
+
+\usepackage{color}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[colorlinks=true,
+            linkcolor=red,
+            urlcolor=blue,
+            citecolor=gray]{hyperref}
+
+\begin{document}
+%\maketitle
+
+\begin{center}
+ \LARGE SAMUEL C. TENKA \\
+ \normalsize Sophomore at University of Michigan, Ann Arbor (2015-2016) \\
+ \href{mailto:samtenka@umich.edu}{samtenka@umich.edu} \\
+ \href{http://sctenka.blogspot.com}{sctenka.blogspot.com} \\
+ \vspace{0mm}
+\end{center}
+
+\begin{section}{Practicum Essays}
+\begin{description}
+\item[Question 1] %What developed your interest in computer science? How will the EP program support your future goals?
+\input{Q1}
+
+\item[Question 2] %Tell us about a time you’ve used your strongest coding language. Please go into detail about your experience using this technical language (for example project, competition, website).
+\input{Q2}
+
+\item[Question 3] %The EP program is committed to increasing diversity within the technology industry. Why do you feel having a diverse workforce is important and what can Google do to further this goal in technology?
+\input{Q3}
+
+\end{description}
+\end{section}
+
+
+\begin{section}{Objectives}
+ Apply my programming skills in a summer internship. 
+ 
+ I'm especially interested in the mathematical aspects of algorithm design, for example in machine learning; to such projects I would bring a strong mathematical background of proof and problem-solving.
+\end{section}
+
+\begin{section}{Qualifications}
+ \subsubsection*{Technical Coursework}
+  My studies focus on CS, physics, and pure math. I've taken the following courses, earning a majority of A+'s; courses planned for academic year 2015-16 are in grey:
+  \begin{description}
+   \item Intro Programming (280), Machine Learning (545), {\color{gray} Artificial Intelligence (492),
+         Algo.s and Data Structures (281), OO and Advanced Programming (381), Circuits and Signals (215, 216), Design Project: Automatic Newspaper-Reader (Engr 355).}
+
+  \item Honors Mechanics and E\&M (160, 260 + labs), Statistical Mechanics (510), Modern Physics (390),
+        Quantum Mechanics (511, 512), {\color{gray} Quantum Field Theory I (513).}
+
+  \item Honors Math/Analysis (295-396), Differential Equations (316), Probability (425), Math for Finance (423),
+        Coding Theory (567), Honors Algebra (493, 494), Explorations in Math (389),
+        {\color{gray} Commutative Rings (614,615), Combinatorics (565, 566).}
+  \end{description}
+  Note: some of the above courses I took while I was in high-school, just for fun. However, I did perform all coursework and was graded on the same scale as official students. Instructor email addresses are available upon request.
+
+
+ \subsubsection*{Work Experience}
+  \begin{description}
+  \item Math Tutor at Eastern Michigan University (2011-2014)
+  \item Course Assistant for Math 389 (Winters 2015, {\color{gray}2016})
+  \item REU Undergrad Researcher in Math (Summer 2015), resulting in \href{http://arxiv.org/abs/1510.08337}{this paper}, written with Stella Gastineau under the mentorship of Andrew Snowden.
+  \end{description}
+
+ \subsubsection*{Programming Experience (6 Years)}
+  Fluent in Python, C++. Experience in C, C\#, Java, Perl, HTML, PHP, JavaScript.
+  
+  I've been creating personal projects such as games, text editors, natural language processors, and image processors for several years. 
+  
+  Combining my passions for physics and computational efficiency, I also have experience in scientific simulations: for example, I've written optimized n-body simulators, Monte-Carlo simulations to study phase transitions, and various numerical PDE solvers. And recently, I've started exploring web development\textemdash my skills here are
+  currently limited, but I'm excited to learn more.
+
+  Selected Projects:
+  \begin{itemize}
+   \item \href{http://sctenka.blogspot.com/2013/08/magnification-art.html}{Image-Magnifier}
+   \item \href{http://sctenka.blogspot.com/2014/06/impression.html}{Artistic Filter: Impressionism}
+   \item \href{http://sctenka.blogspot.com/2014/07/paper.html}{Automatic Eraser}
+   \item \href{http://tweetsense.herokuapp.com/}{TweetSense: A Sentiment Analyzer for MHacks 5}
+   \item \href{http://sctenka.blogspot.ch/2015/08/red-ball.html}{3D Printing!}
+   \item Work in Progress: Chess Engine based not on Game-Tree Analysis but on Recognition of Machine-Learned Patterns.
+  \end{itemize}
+\end{section}
+
+\begin{section}{References}
+ Available upon request.
+\end{section}
+
+\end{document}
