@@ -1,0 +1,46 @@
+%Tell us about a time you’ve used your strongest coding language. Please go into detail about your experience using this technical language (for example project, competition, website).
+
+I like drawing. The problem is, when photographing my drawings,
+since my lightbulbs are nonisotropic and at finite distance, I
+get a nonuniform background. Luckily, I'm also a native
+speaker of C++. Challenge: can we separate content from background---graphite from shadows---in a given bitmap? 
+
+\begin{figure}[h] \label{fig:original}
+   \centering
+   \includegraphics[width=5cm]{original}
+   \caption{A photographed drawing.}
+\end{figure}
+
+Pencil in hand, I wrote some constraints: at each pixel, the shadow is
+brighter than the shadow+graphite. Its brightness varies, but at a
+near-constant gradient. Given those constraints, our guess for the
+shadow should be as dark as possible. In mathematical form, these give
+the objective function that guided my program's gradient descent.
+
+I used a bitmap library I'd written from scratch for other projects.
+A few for-loops later, I was ready to test my program.
+
+It didn't work.
+
+\begin{figure}[h] \label{fig:shadowbad}
+   \centering
+   \includegraphics[width=5cm]{shadow_bad}
+   \caption{Unsuccessfully computed shadows.}
+\end{figure}
+
+\pagebreak
+
+
+Now the fun began: improving on the design, seeing new things. Debugging
+methodically, I displayed the paper at each timestep, pinpointed the
+coordinates where errors became visible, stepped through execution. . . 
+the objective function and gradient descent were implemented correctly,
+and I was confident in my bitmap library. Perhaps the objective function
+itself was faulty? Indeed, it turned out that in discretized space-time,
+my derivatives misbehaved. After some tuning of parameters, I fixed the bug.
+
+\begin{figure}[h]
+   \centering
+   \includegraphics[width=5cm]{shadow} \includegraphics[width=5cm]{graphite}
+   \caption{Final decomposition into shadows (left) and graphite (right).}
+\end{figure}
